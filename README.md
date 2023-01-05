@@ -7,7 +7,7 @@
   > **if ε were gradually reduced, then both methods would asymptotically converge to the optimal policy.**
 ### 範例圖
 * **cliff walking 概念圖**  
-![image](https://user-images.githubusercontent.com/93152909/210700014-fa20c69a-a590-4c4e-b677-9b8918fef414.png)
+![image](https://user-images.githubusercontent.com/93152909/210701183-d360d113-0a41-4dbc-88f7-6fa6fec7d8ac.png)
 
 * **Q-Learning**  
 ![Q-Learning v s  SARSA](https://user-images.githubusercontent.com/93152909/210696601-66d77a5b-ae65-4520-b365-2a5838dec590.png)
