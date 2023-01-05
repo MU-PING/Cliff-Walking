@@ -3,7 +3,10 @@
 * 利用 cliff walking 來比較強化學習( Reinforcement Learning )中 Q-learning 跟 SARSA 演算法之差異
 * 這裡的實驗，訓練過程中 ε-greedy 固定為 0.1
 
+![b36a4719-7571-4d1b-9c27-c8fe7062e79a](https://user-images.githubusercontent.com/93152909/210854796-ada5c17e-c2a1-4287-844b-e7d084920951.gif)
+
 ### 範例圖與說明
+
 * **Reinforcement learning: An introductiong 上的 cliff walking 概念圖**  
 ![image](https://user-images.githubusercontent.com/93152909/210701183-d360d113-0a41-4dbc-88f7-6fa6fec7d8ac.png)
 
