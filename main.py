@@ -152,8 +152,8 @@ def experiment(runs, episodes):
     # plot result  
     plt.figure()
     plt.plot(qlearn_avg_rewards, label="Q-Learning")
-    plt.plot(sarsa_avg_rewards, label="Sarsa")
-    plt.title("Q-Learning v.s. Sarsa")
+    plt.plot(sarsa_avg_rewards, label="SARSA")
+    plt.title("Q-Learning v.s. SARSA")
     plt.xlabel("Episodes")
     plt.ylabel("Sum of rewards during episode")
     plt.ylim(-120, 0)
@@ -182,7 +182,7 @@ def experiment(runs, episodes):
         ax.tick_params(which='minor', bottom=False, left=False)  
         
     draw_heapmap('Q-Learning Inference Path', qlearn_path)
-    draw_heapmap('Sarsa Inference Path', sarsa_path)
+    draw_heapmap('SARSA Inference Path', sarsa_path)
     
 
 if __name__ == "__main__":
