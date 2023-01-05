@@ -31,6 +31,7 @@
       
       * 這樣的情況下兩者最終結果會差不多，只能說在「訓練過程中」，**SARSA** 比 **Q-Learning** 更保守地探索
       
+      * 所以這裡的實驗才會把 ε-greedy 固定為 0.1
 
 
 ## Reinforcement Learning : Q-learning & SARSA
