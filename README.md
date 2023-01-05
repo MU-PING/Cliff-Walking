@@ -16,18 +16,18 @@
   
     > **if ε were gradually reduced, then both methods would asymptotically converge to the optimal policy.**
     
-      * 簡單來說，若 ε 在訓練過程中持續減少，最後**Q-Learning**、**SARSA**應該都會收斂到【Optimal path】
+      * 簡單來說，若 ε 在訓練過程中持續減少，最後 **Q-Learning** 、 **SARSA** 應該都會收斂到【Optimal path】
       
-      * 這樣的情況下兩者最終結果會差不多，我們只能說在「訓練過程中」，**SARSA**比**Q-Learning**更保守的探索
-      * **SARSA**更保守的原因是更新過程中，如果在懸崖邊，下一個狀態若是隨機選取( ε非0的關係 )，則可能會掉下懸崖，因此當前狀態的Q值會降低，使得Agent不願意走靠近懸崖的路徑；**Q-learning**在懸崖邊選取的下一步是最優路徑，所以不會有這個問題，而更偏向走懸崖邊。
-      * 下圖**Q-Learning**的平均獎勵會低於**SARSA**就是因為**Q-Learning**喜歡走在懸崖邊，容易死亡獲得負獎勵。
+      * 這樣的情況下兩者最終結果會差不多，我們只能說在「訓練過程中」，**SARSA** 比 **Q-Learning** 更保守的探索
+      * **SARSA** 更保守的原因是更新過程中，如果在懸崖邊，下一個狀態若是隨機選取( ε非0的關係 )，則可能會掉下懸崖，因此當前狀態的 Q 值會降低，使得 **SARSA** 不願意走靠近懸崖的路徑； **Q-learning** 是用最大值估計來更新，因此可以避免。
+      * 下圖 **Q-Learning** 的平均獎勵會低於 **SARSA** 就是因為 **Q-Learning** 喜歡走在懸崖邊，容易死亡獲得負獎勵。
 
 ![Q-Learning v.s. SARSA](https://user-images.githubusercontent.com/93152909/210696601-66d77a5b-ae65-4520-b365-2a5838dec590.png)
 
-* **Q-Learning 偏向大膽的路徑，符合【Optimal path】**，符合上述推論  
+* ε-greedy 固定：**Q-Learning 偏向大膽的學習路徑，符合【Optimal path】**，符合上述推論  
 ![Q-Learning Inference Path](https://user-images.githubusercontent.com/93152909/210696564-0e28d890-2a2e-44d0-8512-42402e5e8c37.png)
 
-* **SARSA 偏向保守的路徑，符合【Safer path】**，符合上述推論  
+* ε-greedy 固定：**SARSA 偏向保守的學習路徑，符合【Safer path】**，符合上述推論  
 ![SARSA Inference Path](https://user-images.githubusercontent.com/93152909/210696583-2e80dd5c-05c7-4c78-a298-f9ed6d819c53.png)
 
 ## Reinforcement Learning : Q-learning & SARSA
