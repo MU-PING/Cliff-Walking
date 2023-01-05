@@ -7,16 +7,18 @@
 ![image](https://user-images.githubusercontent.com/93152909/210701183-d360d113-0a41-4dbc-88f7-6fa6fec7d8ac.png)
 
 * **Q-Learning v.s.  SARSA**  
-  * 訓練過程中 ε-greedy 固定為 0.1
+  * 這裡的實驗，訓練過程中 ε-greedy 固定為 0.1
     * **Q-Learning** : 用最大值估計來更新，因此有學習到全局最優的能力【Optimal path】，所以有更好的最終性能。
+    
     * **SARSA** : 基於當前policy的動作選擇，用這個樣本更新當前的policy，直觀簡單但可能收斂到局部最優【Safer path】。
 
-  * RL聖經(Reinforcement learning: An introduction)上有一句話: 
+  * RL聖經( Reinforcement learning: An introduction )上有一句話: 
   
     > **if ε were gradually reduced, then both methods would asymptotically converge to the optimal policy.**
     
       * 簡單來說，若 ε 在訓練過程中持續減少，最後**Q-Learning**、**SARSA**應該都會收斂到【Optimal path】
-      * 這樣情況下兩者最終結果會差不多，我們只能說在「訓練過程中」，**SARSA**比**Q-Learning**更保守
+      
+      * 這樣的情況下兩者最終結果會差不多，我們只能說在「訓練過程中」，**SARSA**比**Q-Learning**更保守的探索
       * **SARSA**更保守的原因是更新過程中，如果在懸崖邊，下一個狀態若是隨機選取，則可能會掉下懸崖，因此當前狀態的Q值會降低，使得Agent不願意走靠近懸崖的路徑；**Q-learning**在懸崖邊選取的下一步是最優路徑，所以不會有這個問題，而更偏向走懸崖邊。
       * 下圖**Q-Learning**的平均獎勵會低於**SARSA**就是因為**Q-Learning**喜歡走在懸崖邊，容易死亡獲得負獎勵。
 
