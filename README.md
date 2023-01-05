@@ -19,7 +19,7 @@
    * **SARSA** : 基於當前policy的動作選擇來更新當前的policy，直觀簡單但可能收斂到局部最優【Safer path】。
    * **SARSA** 更保守的原因是更新過程中，如果在懸崖邊，下一個狀態若是隨機選取( ε非0的關係 )，則可能會掉下懸崖，因此當前狀態的 Q 值會降低，使得 **SARSA** 不願意走靠近懸崖的路徑； **Q-learning** 是用最大值估計來更新，可以避免這個問題。
    
-   * 下圖 **Q-Learning** 的平均獎勵會低於 **SARSA** ，因為 **Q-Learning** 喜歡走在懸崖邊冒險，容易死亡獲得負獎勵。
+   * 下圖 **Q-Learning** 的平均獎勵會低於 **SARSA** ，因為其喜歡走在懸崖邊冒險，容易死亡獲得負獎勵。
       
       ![Q-Learning v.s. SARSA](https://user-images.githubusercontent.com/93152909/210696601-66d77a5b-ae65-4520-b365-2a5838dec590.png)
       
