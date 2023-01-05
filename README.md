@@ -4,7 +4,7 @@
 
 * 實驗中 ε-greedy 固定為 0.1，因為RL聖經(Reinforcement learning: An introduction)上有一句話: 
 
-  > **Of course, if ε were gradually reduced, then both methods would asymptotically converge to the optimal policy.**
+  > **if ε were gradually reduced, then both methods would asymptotically converge to the optimal policy.**
 ### 範例圖
 * **cliff walking 概念圖**  
 ![image](https://user-images.githubusercontent.com/93152909/210700014-fa20c69a-a590-4c4e-b677-9b8918fef414.png)
